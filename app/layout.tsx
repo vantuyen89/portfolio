@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import GradientCursor from "@/components/GradientCursor";
+import ScrollToTop from "@/components/ScrollTotop";
+import PageLoader from "@/components/PageLoader";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jetBrainMono = JetBrains_Mono({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-jetbrainsMono",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${jetBrainMono.variable} ${jetBrainMono.variable} antialiased`}
       >
+        <PageLoader />
+        <GradientCursor />
+        <Header />
         {children}
+        {/* <Footer /> */}
+        <ScrollToTop />
       </body>
     </html>
   );
