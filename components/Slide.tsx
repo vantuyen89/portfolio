@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import ActiveSlide from "./ActiveSlide";
+import { Swiper as SwiperType } from "swiper";
 export interface Project {
   number: string;
   category: string;
@@ -17,10 +18,10 @@ export interface Project {
 
 interface SlideProps {
   projects: Project[];
-  setProject: any;
+  setProject: React.Dispatch<React.SetStateAction<Project>>;
 }
 const Slide = ({ projects, setProject }: SlideProps) => {
-  const handleSlide = (swiper: any) => {
+  const handleSlide = (swiper: SwiperType) => {
     console.log(swiper);
 
     const curentIndex = swiper.activeIndex;

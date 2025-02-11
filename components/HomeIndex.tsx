@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Information from "@/components/Information";
 import Project from "@/components/Project";
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ const HomeIndex = () => {
     <main className="container">
       <div className="flex flex-col lg:flex-row px-20 py-20 gap-10 justify-between items-center">
         <div className="flex flex-col gap-2 ">
-          <p className="tracking-widest text-[#f9cc71]">Hello World , I'm</p>
+          <p className="tracking-widest text-[#f9cc71]">{`Hello World, I'm`}</p>
           <p className="text-4xl tracking-wider font-bold">Nguyen Van Tuyen</p>
           <div className="text-[#f9cc71]">
             <Typewriter

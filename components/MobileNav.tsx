@@ -1,20 +1,14 @@
 "use client";
-import React from "react";
-import { FaAlignRight } from "react-icons/fa";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  SheetTrigger
 } from "@/components/ui/sheet";
-import Link from "next/link";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FaAlignRight } from "react-icons/fa";
 const MobileNav = () => {
   const pathName = usePathname();
   const links = [

@@ -1,7 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion"; // hoặc icon bạn muốn dùng
-import { FaChevronCircleUp, FaUpload } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);

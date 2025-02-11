@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ReactElement } from "react";
 import {
   Tooltip,
   TooltipContent,
@@ -7,12 +7,17 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import { motion } from "framer-motion";
-interface TooltipContent {
-  children: any;
+interface TooltipProps {
+  icon: ReactElement;
   content: string;
   side?: "top" | "bottom" | "left" | "right";
 }
-const TooltipCpn = ({ children, content, side }: TooltipContent) => {
+
+const TooltipCpn: React.FC<TooltipProps> = ({
+  icon,
+  content,
+  side = "top",
+}) => {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -24,7 +29,7 @@ const TooltipCpn = ({ children, content, side }: TooltipContent) => {
               transition: { duration: 1.5, ease: "easeOut" },
             }}
           >
-            {children}
+            {icon}
           </motion.div>
         </TooltipTrigger>
         <TooltipContent side={side} className="text-center">

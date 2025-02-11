@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 const Project = () => {
   const projects = [
@@ -133,7 +133,7 @@ const Project = () => {
                     ease: "easeOut",
                   }}
                 >
-                  <img
+                  <Image
                     src={section.img}
                     alt={section.title}
                     className="w-full rounded-[10px] shadow-lg"
