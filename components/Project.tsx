@@ -34,9 +34,9 @@ const Project = () => {
       title: "Portfolio website",
       description: "Building a personal website with Nextjs and Tailwind",
       img: "/images/portfolio.png",
-      github: "https://github.com/vantuyen89/weather-app",
+      github: "https://github.com/vantuyen89/portfolio",
       stack: ["Nextjs", "Tailwind", "Swiper"],
-      live: "https://weather-app-seven-orcin-54.vercel.app/",
+      live: "https://emtuyen-portfolio.netlify.app/",
       day: "02/2025 - 02/2025",
     },
   ];
