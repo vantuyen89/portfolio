@@ -25,11 +25,11 @@ const AboutMe = () => {
           </div>
           <div>
             <Image
-              src={"/images/imgcv.jpg"}
+              src={"/images/tn.jpg"}
               alt="cv"
               width={150}
               height={200}
-              className="object-cover"
+              className="object-cover rounded-xl"
             />
           </div>
         </div>

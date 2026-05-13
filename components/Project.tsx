@@ -137,6 +137,8 @@ const Project = () => {
                     src={section.img}
                     alt={section.title}
                     className="w-full rounded-[10px] shadow-lg"
+                    width={500}
+                    height={500}
                   />
                 </motion.div>
               </div>
