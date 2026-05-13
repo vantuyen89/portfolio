@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 const Project = () => {
   const projects = [
     {
@@ -39,7 +40,6 @@ const Project = () => {
       live: "https://emtuyen-portfolio.netlify.app/",
       day: "02/2025 - 02/2025",
     },
-
     {
       number: "04",
       category: "UI/UX Design",
@@ -52,8 +52,10 @@ const Project = () => {
       day: "02/2025 - 04/2025",
     },
   ];
+
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center px-4 sm:px-6 lg:px-10">
+      {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -68,19 +70,22 @@ const Project = () => {
           mass: 0.2,
           opacity: { duration: 1.5 },
         }}
-        className="relative z-10 text-center mb-5"
+        className="relative z-10 text-center mb-8"
       >
-        <h3 className="font-semibold text-2xl text-white/60">My project</h3>
-        <p className="font-light text-white/50 text-sm">
+        <h3 className="font-semibold text-2xl sm:text-3xl text-white/60">
+          My project
+        </h3>
+        <p className="font-light text-white/50 text-sm sm:text-base">
           This is my project information
         </p>
       </motion.div>
-      <div className="min-h-[50vh] p-8 gap-6 grid grid-cols-1">
+
+      {/* Projects */}
+      <div className="w-full max-w-7xl py-4 sm:py-8 gap-8 grid grid-cols-1">
         {projects.map((section, index) => (
-          <Link href={section?.live} key={index}>
+          <Link href={section.live} key={index}>
             <motion.div
-              key={index}
-              className="min-h-[50vh] flex items-center justify-center rounded-[40px] px-7 cursor-pointer transition group"
+              className="w-full rounded-[20px] sm:rounded-[30px] lg:rounded-[40px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8 cursor-pointer transition group"
               initial={{ backgroundColor: "transparent" }}
               whileHover={{
                 backgroundColor: "rgba(23, 39, 75, 0.3)",
@@ -91,9 +96,10 @@ const Project = () => {
                 ease: "easeInOut",
               }}
             >
-              <div className="max-w-6xl w-full grid grid-cols-2 gap-8 items-center ">
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/* Text Content */}
                 <motion.div
-                  className="space-y-4"
+                  className="space-y-4 order-2 lg:order-1"
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{
@@ -108,17 +114,24 @@ const Project = () => {
                     opacity: { duration: 0.8 },
                   }}
                 >
-                  <span>{section?.day}</span>
-                  <h2 className="text-xl font-medium group-hover:text-[#51c9cd] transition-colors duration-300">
+                  <span className="text-sm sm:text-base text-white/70 block">
+                    {section.day}
+                  </span>
+
+                  <h2 className="text-xl sm:text-2xl font-medium group-hover:text-[#51c9cd] transition-colors duration-300">
                     {section.title}
                   </h2>
-                  <p className="text-base">{section.description}</p>
-                  <p></p>
-                  <div className="flex gap-2">
-                    {section?.stack?.map((pro, index: number) => {
+
+                  <p className="text-sm sm:text-base leading-7 text-white/80">
+                    {section.description}
+                  </p>
+
+                  {/* Stack */}
+                  <div className="flex flex-wrap gap-2">
+                    {section.stack.map((pro, index: number) => {
                       return (
                         <div
-                          className="bg-[#193756] rounded-full p-1 text-sm px-3 hover:text-[#51c9cd] transition"
+                          className="bg-[#193756] rounded-full py-1 px-3 text-xs sm:text-sm hover:text-[#51c9cd] transition"
                           key={index}
                         >
                           {pro}
@@ -127,8 +140,10 @@ const Project = () => {
                     })}
                   </div>
                 </motion.div>
+
+                {/* Image */}
                 <motion.div
-                  className="origin-bottom-right"
+                  className="origin-bottom-right order-1 lg:order-2"
                   initial={{ opacity: 0, y: 50, x: 150 }}
                   animate={{ opacity: 1, y: 0 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -148,7 +163,7 @@ const Project = () => {
                   <Image
                     src={section.img}
                     alt={section.title}
-                    className="w-full rounded-[10px] shadow-lg"
+                    className="w-full h-auto rounded-[10px] shadow-lg"
                     width={500}
                     height={500}
                   />

@@ -3,7 +3,9 @@ import Image from "next/image";
 const EducationWork = () => {
   return (
     <div className="w-full">
-      <h3 className="text-2xl font-semibold text-center py-2">My Education</h3>
+      <h3 className="text-3xl font-bold text-center py-6 bg-gradient-to-r from-[#f9cc71] to-white bg-clip-text text-transparent">
+        My Education
+      </h3>
       <div className="grid grid-cols-1 gap-4">
         <div className="w-full flex flex-row bg-[#2d2d2d] rounded-[10px] p-4 justify-between items-center col-span-1 gap-2 ">
           <div className="flex flex-col">
@@ -15,7 +17,6 @@ const EducationWork = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

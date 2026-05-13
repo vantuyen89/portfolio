@@ -12,7 +12,9 @@ const AboutMe = () => {
   };
   return (
     <div className="w-full">
-      <h3 className="text-2xl font-semibold text-center py-2">About Me</h3>
+      <h3 className="text-3xl font-bold text-center py-6 bg-gradient-to-r from-[#f9cc71] to-white bg-clip-text text-transparent">
+        About Me
+      </h3>
       <div className="grid grid-cols-1 gap-4">
         <div className="w-full flex flex-row justify-between bg-[#2d2d2d] rounded-[10px] p-4 col-span-1 gap-2 items-center">
           <div className="flex flex-col gap-2">

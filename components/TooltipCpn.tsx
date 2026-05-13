@@ -19,9 +19,9 @@ const TooltipCpn: React.FC<TooltipProps> = ({
   side = "top",
 }) => {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={0}>
       <Tooltip>
-        <TooltipTrigger>
+        <TooltipTrigger asChild>
           <motion.div
             initial={{ scale: 1 }}
             whileHover={{

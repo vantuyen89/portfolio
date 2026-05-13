@@ -136,8 +136,8 @@ const ExperienceWork = () => {
             <div className="mt-6 flex flex-wrap gap-2">
               {item.tech.map((tech, i) => (
                 <span
-                  key={i}
-                  className="px-4 py-1.5 text-xs bg-gray-800 hover:bg-gray-700 transition-colors rounded-full border border-gray-600 text-gray-300"
+                  key={i + 1}
+                  className="bg-[#193756] rounded-full py-1 px-3 text-xs sm:text-sm hover:text-[#51c9cd] transition-colors duration-300 cursor-pointer"
                 >
                   {tech}
                 </span>
