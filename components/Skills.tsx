@@ -43,7 +43,7 @@ const Skills = () => {
         <Button
           className={clsx(
             open === true ? " bg-[#7e7768] text-[#f9cc71]" : "",
-            "hover:bg-[#7e7768] rounded-[5px] duration-300"
+            "hover:bg-[#7e7768] rounded-[5px] duration-300",
           )}
           onClick={() => {
             setOpen(true);
@@ -82,12 +82,13 @@ const Skills = () => {
             setSkills([
               { text: "MongoDB", image: "/images/mongodbb.svg" },
               { text: "Github", image: "/images/git.webp" },
+              { text: "Figma", image: "/images/figma.png" },
             ]);
             setOpen(false);
           }}
           className={clsx(
             open === false ? "rounded-[5px] bg-[#7e7768] text-[#f9cc71]" : "",
-            "hover:bg-[#7e7768] rounded-[5px] duration-300"
+            "hover:bg-[#7e7768] rounded-[5px] duration-300",
           )}
         >
           Tools

@@ -14,7 +14,7 @@ const HomeIndex = () => {
           <p className="text-4xl tracking-wider font-bold">Nguyen Van Tuyen</p>
           <div className="text-[#f9cc71]">
             <Typewriter
-              words={["Web Developer", "Full-stack Engineer"]}
+              words={["Web Developer", "Full-stack Engineer", "UI/UX Designer"]}
               cursor
               loop={true}
               cursorStyle="|"

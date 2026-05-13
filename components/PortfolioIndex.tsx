@@ -39,6 +39,18 @@ const projects = [
     stack: ["Nextjs", "Tailwind", "Swiper"],
     live: "https://weather-app-seven-orcin-54.vercel.app/",
   },
+  {
+    number: "04",
+    category: "UI/UX Design",
+    title: "E-commerce Website Design",
+    description:
+      "Designed a complete e-commerce website in Figma over 2 months, including user flow, wireframes, responsive interface design, product pages, shopping experience, and modern visual system focused on usability and conversion.",
+    img: "/images/figmaproject.png",
+    github:
+      "https://www.figma.com/design/hHK4xIYtwBiy3lqbBetZaJ/ASM?node-id=509-1599&t=N6J1fnBgEzI6x0vJ-1",
+    stack: ["Figma", "UI Design", "UX Research"],
+    live: "https://www.figma.com/design/hHK4xIYtwBiy3lqbBetZaJ/ASM?node-id=509-1599&t=N6J1fnBgEzI6x0vJ-1",
+  },
 ];
 const PortfolioIndex = () => {
   const [project, setProject] = useState<Project>(projects[0]);

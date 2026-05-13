@@ -39,6 +39,18 @@ const Project = () => {
       live: "https://emtuyen-portfolio.netlify.app/",
       day: "02/2025 - 02/2025",
     },
+
+    {
+      number: "04",
+      category: "UI/UX Design",
+      title: "E-commerce Website Design",
+      description:
+        "Designed a complete e-commerce website in Figma over 2 months, including user flow, wireframes, responsive interface design, product pages, shopping experience, and modern visual system focused on usability and conversion.",
+      img: "/images/figmaproject.png",
+      stack: ["Figma", "UI Design", "UX Research", "Wireframing", "Prototype"],
+      live: "https://www.figma.com/design/hHK4xIYtwBiy3lqbBetZaJ/ASM?node-id=509-1599&t=UgljFed9SGuNDp0p-1",
+      day: "02/2025 - 04/2025",
+    },
   ];
   return (
     <div className="flex flex-col justify-center items-center">

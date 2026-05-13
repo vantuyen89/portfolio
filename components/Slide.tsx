@@ -22,11 +22,7 @@ interface SlideProps {
 }
 const Slide = ({ projects, setProject }: SlideProps) => {
   const handleSlide = (swiper: SwiperType) => {
-    console.log(swiper);
-
     const curentIndex = swiper.activeIndex;
-    console.log(curentIndex);
-
     setProject(projects[curentIndex]);
   };
   return (

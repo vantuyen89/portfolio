@@ -9,19 +9,19 @@ const Information = () => {
     {
       icon: <FaFacebook size={30} />,
       title: "Facebook",
-      link: "https://www.facebook.com/profile.php?id=100036305318872",
+      link: "https://www.facebook.com",
       className: "",
     },
     {
       icon: <FaInstagram size={30} />,
       title: "Instagram",
-      link: "https://www.instagram.com/tueynisme/",
+      link: "https://www.instagram.com",
       className: "",
     },
     {
       icon: <FaTiktok size={30} />,
       title: "Tiktok",
-      link: "https://www.tiktok.com/@ght.hc.code",
+      link: "https://www.tiktok.com",
       className: "",
     },
     {
